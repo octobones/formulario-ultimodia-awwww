@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+</head>
+<body>
+    <main class="container">
+        <!-- icone -->
+        <div class="icone">
+            <img src="./imgs/coliseu-coquista.jpg" alt="Icone da conquista de vencer o coliseu">
+        </div>
+        <h1>Lute no coliseu!</h1>
+        <p>Preencha o formulário para se tornar um lutador.</p>
+        <form id="formulario">
+            <!-- Nome -->
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <!-- Nacionalidade -->
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" placeholder="Informe sua nacionalidade" required>
+
+            <!-- Telefone -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(11)99999-9999" required>
+
+            <!-- Estilo da luta -->
+            <label for="estilo">Estilo de luta:</label>
+            <select id="estilo">
+                <option value="">Selecione uma opção</option>
+                <option value="brawler">Brawler</option>
+                <option value="rush">Rush</option>
+                <option value="beast">Beast</option>
+                <option value="legend">Legend</option>
+            </select>
+
+            <!-- Campo de observações -->
+             <label for="mensagem"></label>
+             <textarea id="mensagem" placeholder="Digite uma observação"></textarea>
+
+             <!-- Enviar -->
+             <button type="submit">Enviar Solicitção</button>
+        </form>
+    </main>
+    <script src="./main.js">
+
+    </script>
+</body>
+</html>
